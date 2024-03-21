@@ -53,16 +53,21 @@ public class Human extends LivingBeings implements EarthBeing, SkyBeing {
     //SkyBeing methods
     @Override
     public void fly() {
-        System.out.println("A human flies in a plane");
+        System.out.println("A human flies in a plane... The plane falls out...");
     }
 
     @Override
     public void changeDimension() {
-        System.out.println("A human changes dimension... Real human? ");
+        System.out.println("A human changes dimension, is going to the hell... Human dies.");
     }
 
     @Override
     public void navigate() {
         System.out.println("A human is navigating on a aerostatic balloon.");
+    }
+
+    @Override
+    public String toString() {
+        return "The human: "+ getName() + ", is: " + getAge() + " years old, height=" + getHeight();
     }
 }

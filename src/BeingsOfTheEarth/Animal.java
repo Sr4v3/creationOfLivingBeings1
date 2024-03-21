@@ -43,4 +43,9 @@ public class Animal extends LivingBeings implements EarthBeing {
     public void crawl() {
         System.out.println("An animal is crawling.");
     }
+
+    @Override
+    public String toString() {
+        return "The animal: "+ getName() + ", is: " + getAge() + " years old, height=" + getHeight();
+    }
 }

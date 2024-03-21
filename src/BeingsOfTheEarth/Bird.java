@@ -1,6 +1,6 @@
-package SkyBeings;
+package BeingsOfTheEarth;
 
-import BeingsOfTheEarth.EarthBeing;
+import SkyBeings.SkyBeing;
 import common.LivingBeings;
 
 public class Bird extends LivingBeings implements EarthBeing, SkyBeing {
@@ -56,12 +56,16 @@ public class Bird extends LivingBeings implements EarthBeing, SkyBeing {
 
     @Override
     public void changeDimension() {
-        System.out.println("A bird changes dimension.");
+        System.out.println("A bird die. Is going to the heaven, a new dimension.");
     }
 
     @Override
     public void navigate() {
-        System.out.println("A bird is navigating.");
+        System.out.println("A bird is navigating with other birds.");
     }
+
+    @Override
+    public String toString() {
+        return "The bird " + getName() + ", is: " + getAge() + " years old, height=" + getHeight();}
 
 }
